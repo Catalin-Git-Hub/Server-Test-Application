@@ -25,6 +25,8 @@ import static org.springframework.http.HttpStatus.OK;
 @RequiredArgsConstructor
 public class ServerResource {
     
+    //TODO Check the servers addresses, as they might show as DOWN, even though they should be UP.
+    
     private final ServerServiceImpl serverService;
     
     @GetMapping("/list")
